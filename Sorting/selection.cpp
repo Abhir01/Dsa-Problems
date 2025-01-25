@@ -1,4 +1,4 @@
- #include<iostream>
+#include<iostream>
 using namespace std;
 
 void print(int arr[],int n){
@@ -21,6 +21,7 @@ void selection(int arr[], int n){
 		// after all the elements traversed by j now we can swap 
 		swap(arr[minInd] , arr[i]);
 	}
+	print(arr,n);
 }
 
 int main(){
@@ -30,7 +31,7 @@ int main(){
 		cin>>arr[i];
 	}
 	selection(arr,n);
-	print(arr,n);	
+		
 }
 
 //best , worst , avg  -> o(N2)
